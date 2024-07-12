@@ -4,7 +4,7 @@ import shutil as sh
 
 exten = []
 pastas = []
-path = input(r"- Insira o diretório: ")
+path = input(r"- Insira o diretório(ex: C:/Users/Usuário/Downloads): ")
 
 try:
   dir_pasta = os.mkdir(f"{path}/Pastas")
