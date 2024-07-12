@@ -12,3 +12,5 @@ A simple python script that organizes your desired directory according to the fi
 
 ## Sobre:
 Um simples script python que organiza a sua pasta desejada de acordo com as extensões do arquivo, criando pastas e movendo os arquivos de acordo.
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
