@@ -5,6 +5,7 @@
 ## About:
 A simple python script that organizes your desired directory according to the file's extension, creating folder and moving the files accordingly.
 
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 <h1 align="center">
   Organizador de arquivos em python
