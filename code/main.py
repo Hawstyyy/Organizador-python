@@ -4,7 +4,7 @@ print(os.getcwd())
 
 exten = []
 pastas = []
-path = input(r"- Insira o diretório: ")
+path = input(r"- Insira o diretório(ex: C:/Users/Usuário/Downloads): ")
 
 try:
   dir_pasta = os.mkdir(f"{path}/Pastas")
@@ -29,5 +29,4 @@ for arquivo in os.listdir(path):
   if os.path.isfile(arq_path) == True:
     caminho, tipo = os.path.splitext(arq_path)
     sh.move(arq_path, f"{path}/{tipo}")
-
 print("Encerrando...")
