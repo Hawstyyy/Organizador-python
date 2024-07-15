@@ -1,6 +1,6 @@
 import os
 import shutil as sh
-
+print(os.getcwd())
 
 exten = []
 pastas = []
@@ -22,10 +22,11 @@ for nome in exten:
   if nome not in os.listdir(path):
     os.mkdir(f"{path}/{nome}")
   else:
-    print("ja tem")
+    print("- Pasta já presente")
 
 for arquivo in os.listdir(path):
   arq_path = os.path.abspath(f"{path}/{arquivo}")
   if os.path.isfile(arq_path) == True:
     caminho, tipo = os.path.splitext(arq_path)
     sh.move(arq_path, f"{path}/{tipo}")
+print("Encerrando...")
