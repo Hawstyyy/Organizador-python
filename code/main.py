@@ -8,7 +8,6 @@ root = Tk()
 root.withdraw()
 path = filedialog.askdirectory()
 exten = []
-pastas = []
 
 try:
   dir_pasta = os.mkdir(f"{path}/Pastas")
