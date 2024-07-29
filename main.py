@@ -23,8 +23,6 @@ for nome in exten:
     print(f"Criando pasta: {nome}")
     time.sleep(2)
     os.mkdir(f"{path}/{nome}")
-  else:
-    print(f"Pasta {nome} já presente")
 
 for arquivo in os.listdir(path):
   arq_path = os.path.abspath(f"{path}/{arquivo}")
