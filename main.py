@@ -9,13 +9,8 @@ root.withdraw()
 path = filedialog.askdirectory()
 exten = []
 
-try:
-  dir_pasta = os.mkdir(f"{path}/Pastas")
-  print("Executando...")
-  time.sleep(3)
-except:
-  print("Executando...")
-  time.sleep(3)
+print("Executando...")
+time.sleep(3)
 
 for arquivo in os.listdir(path):
   arq_path = os.path.abspath(f"{path}/{arquivo}")
