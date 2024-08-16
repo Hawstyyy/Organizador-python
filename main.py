@@ -1,5 +1,4 @@
 import os
-import time
 import shutil as sh
 from tkinter import *
 from tkinter import ttk,filedialog
@@ -36,21 +35,22 @@ def organizar():
   top.title("Popup")
   Label(top, text= "Hello World!").place(relx=0.5, rely=0.5, anchor=CENTER)
 
-
-
 root = Tk()
 
-root.geometry("500x400")
-root.resizable(False, False)
 root.title("Python Organizer")
-ttk.Label(root, text="Pasta selecionada:").place(relx=0.5, rely=0.35, anchor=CENTER)
+root.geometry("400x300")
+root.resizable(False, False)
 
-folder_label = ttk.Label(root)
-folder_label.place(relx=0.5, rely=0.4, anchor=CENTER)
+ttk.Label(root, text="Pasta selecionada:", font=("Arial",20, "bold")).place(relx=0.5, rely=0.2, anchor=CENTER)
+folder_label = ttk.Label(root, font=("Arial", 10))
+folder_label.place(relx=0.5, rely=0.35, anchor=CENTER)
 
 btn1 = Button(root, text="Selecionar pasta", command=diretorio, height=2, width=20)
 btn1.place(relx=0.5, rely=0.5, anchor=CENTER)
+btn1.config(background="green", foreground="white", font=("Arial", 10))
+
 btn2 = Button(root, text="Organizar pasta", command=organizar, height=2, width=20)
 btn2.place(relx=0.5, rely=0.65, anchor=CENTER)
+btn2.config(background="green", foreground="white", font=("Arial", 10))
 
 root.mainloop()
