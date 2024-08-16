@@ -31,9 +31,10 @@ def organizar():
       sh.move(arq_path, f"{folder_selected}/{tipo}")
 
   top= Toplevel(root)
-  top.geometry("300x200")
+  top.geometry("200x100")
   top.title("Popup")
-  Label(top, text= "Hello World!").place(relx=0.5, rely=0.5, anchor=CENTER)
+  Label(top, text= "Pasta organizada!", font=("Arial", 12)).place(relx=0.5, rely=0.4, anchor=CENTER)
+  Button(top, text= "Close", command=top.destroy, font=("Arial", 12)).place(relx=0.5, rely=0.7, anchor=CENTER)
 
 root = Tk()
 
