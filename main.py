@@ -43,9 +43,9 @@ folder_label = ttk.Label(root, font=("Arial", 10))
 folder_label.place(relx=0.5, rely=0.35, anchor=CENTER)
 
 btn1 = ttk.Button(root, text="Selecionar pasta", command=diretorio, )
-btn1.place(relx=0.5, rely=0.5, anchor=CENTER)
+btn1.place(relx=0.5, rely=0.5, anchor=CENTER, width=250, height=35)
 
 btn2 = ttk.Button(root, text="Organizar pasta", command=organizar)
-btn2.place(relx=0.5, rely=0.65, anchor=CENTER)
+btn2.place(relx=0.5, rely=0.65, anchor=CENTER, width=250, height=35)
 
 root.mainloop()
