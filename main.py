@@ -1,6 +1,5 @@
 import os
 import shutil as sh
-import customtkinter
 import customtkinter as ctk
 from tkinter import messagebox,filedialog
 
